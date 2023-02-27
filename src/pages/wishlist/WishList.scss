@@ -1,0 +1,38 @@
+$primarycolor:#04d39f;
+.wishlist_section{
+    margin: 100px 0 0 0;
+    padding: 3rem 0;
+
+    .table_responsive{
+        overflow-x:auto;
+
+        .wishlist_table{
+            border: 1px solid #eaeaea;
+        }
+        th{
+            padding: 0.8rem;
+        }
+        td{
+            vertical-align: middle;
+            padding: 0.8rem;
+        }
+        .product_remove_btn{
+            cursor: pointer;
+        }
+        .product_actions{
+            text-align: center;
+        }
+        .addTo_cart_btn{
+            padding: 0.5rem 3rem;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            transition: all 0.3s ease;
+            font-size: 0.8rem;
+        }
+        .addTo_cart_btn:hover{
+            color: #fff;
+            background-color:$primarycolor;
+            transition: all 0.3s ease;
+        }
+    }
+}

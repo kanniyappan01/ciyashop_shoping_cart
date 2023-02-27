@@ -1,0 +1,105 @@
+.products_section{
+    // height: calc(100vh - 70px);
+    margin: 70px 0 0 0 ;
+}
+.product_img_wraper{
+    position: relative;
+    overflow: hidden;
+    img{
+        width:100%;
+    }
+    .img_swap{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: all 0.6s ease;
+    }
+    .img_swap:hover{
+        
+        transition: all 0.6s ease;
+        transform: scale(1.2);
+    }
+}
+.product_img_wraper:hover .img_swap{
+    opacity: 1;
+    transition: all .04s ease;
+}
+.product_thumbnail_inner{
+    position: relative;
+
+    .product_actions{
+        opacity: 0;
+        position: absolute;
+        bottom: 14px;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        transition: all 0.4s ease;
+
+        .product_action_inner{
+            display: flex;
+            width:90%;
+
+            button{
+                background-color: #323232;
+                color: #a7a5a6;
+                border: none;
+            }
+            .wishlist_btn{
+                button{
+                    padding: 0.5rem 0.6rem;
+                    .wishlist_icon{
+                        font-size: 1.7rem;
+                    }
+                }
+            }
+            .add_to_cart{
+                flex-grow: 1;
+                button{
+                    width: 100%;
+                    font-size: 0.9rem;
+                    padding: 0.7rem 2rem;
+                    display: inline-block;
+                    border-left: 1px solid #a7a5a6;
+                }
+            }
+        }
+    }
+}
+
+.product_thumbnail_inner:hover .product_actions{
+    
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+
+
+.product_info{
+    .product_category{
+        color: #ababab;
+        font-size: 0.8rem;
+        display: inline-block;
+    }
+    .product_name{
+        font-size: 1rem;
+        font-weight: 400;
+         white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .price{
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+    .rating{
+        font-size: 1rem;
+    }
+}
+.active{
+    color: red;
+}

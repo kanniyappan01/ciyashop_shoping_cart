@@ -1,0 +1,20 @@
+$primaryColor:#04d39f;
+ul li{
+    list-style-type: none;
+
+    a{
+        text-decoration: none;
+    }
+}
+.product_detials{
+    p{
+        color: #000;
+        font-size: 0.8rem;
+        text-align: center;
+        transition: all 0.4s ease;
+    }
+    p:hover{
+        color:$primaryColor;
+        transition: all 0.4s ease;
+    }
+}
